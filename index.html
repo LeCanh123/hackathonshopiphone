@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    [class*="col-"] {
+        float: left;
+    }
+
+    .col-1 {
+        width: 5%;
+    }
+
+    .col-2 {
+        width: 30%;
+    }
+
+    .col-3 {
+        width: 40%;
+    }
+
+    .col-4 {
+        width: 7%
+    }
+
+    .col-5 {
+        width: 14%
+    }
+
+    .col-6 {
+        width: 70%
+    }
+
+    .col-7 {
+        width: 100%
+    }
+
+    .col-8 {
+        width: 52%
+    }
+
+    .head {
+        width: 100%;
+        height: auto;
+        background-color: aqua;
+        display: block;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .head-item {
+        position: relative;
+    }
+
+    .left {
+        line-height: 50px;
+        position: relative;
+        text-decoration: none;
+
+    }
+
+    input {
+        height: 40px;
+        margin-top: 30px;
+
+    }
+
+    button {
+        height: 40px;
+        width: 10px;
+        margin: 30px 50px 0px 0px;
+
+
+    }
+
+    body {
+        background-color: rgb(219, 217, 211);
+    }
+
+    .body {
+        background-color: white;
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    .block {
+
+        margin-top: 10px;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .body ul {
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    .body ul li a {
+        margin-top: 10px;
+    }
+
+    .container {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .item {
+        margin: 5px;
+        position: relative;
+    }
+
+    .item-1 {
+        height: 200px;
+        width: 100%;
+      
+
+    }
+
+    .item-2 {
+
+        width: 100%;
+        background-color: white;
+       
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+
+    .marginl {
+        margin: 0px 10px 0px 3px;
+    }
+
+    .textalignr {
+        text-align: right;
+        float: right;
+    }
+
+    .foot {
+        width: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        background-color: rgb(219, 217, 211);
+    }
+
+    .footitem {
+        position: relative;
+
+    }
+
+    .foot a {
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 768px) {
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="head col-7">
+        <form class="col-7">
+            <h1 class="left col-2">RIKKEI_ACADEMY_SHOP</h1>
+            <input class="left col-2" type="text" style="margin: 30px 10px 0px 0px;"
+                placeholder="Tìm kiếm theo tên sản phẩm" name="Sanpham">
+            <button class=" col-1" type="submit" value="tìm"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a style="margin:30px 10px 0 0px;" class="left col-4" href="">Giỏ hàng</a>
+            <a style="margin:30px 10px 0 0px;" class="left col-4" href="">Đăng nhập</a>
+            <a style="margin:30px 10px 0 0px;" class="left col-4" href="">Đăng kí</a><br>
+        </form>
+    </div>
+    <div class="col-5 body">
+        <ul>
+            <li>
+                <h4 class="block col-7">Danh Mục Sản Phẩm</h4>
+            </li>
+            <li><a class="block col-7 red" href="" style="margin-top:30px">Tất cả sản phẩm</a></li>
+            <li><a class="block col-7" href="">Thiết bị điện tử</a></li>
+            <li><a class="block col-7" href="">Sách </a></li>
+            <li><a class="block col-7" href="">Đồ tiêu dùng</a></li>
+            <li><a class="block col-7" href="">Thời trang</a></li>
+
+        </ul>
+    </div>
+    <div class="col-6 container">
+        <div class="col-5 item">
+            <div class="item-1"><img src="./Hinhanh/iphone11promax.jpg"></div>
+            <div class="item-2">
+                <p>Iphone 12 Promax</p>
+                <p class="red col-8 marginl">35.000.000 đ</p>
+                <a class="red col-3" href="" style="margin-top:0px"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="blue col-5 marginl" href="" style="margin-top:15px"><i class="fa-solid fa-heart"></i></a>
+                <p class="col-6 textalignr">48 Đã bán</p>
+                <p class="col-5">Apple</p>
+                <p class="col-6 textalignr" style="margin-top:0px">Hà Nội</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-5 item">
+            <div class="item-1"><img src="./Hinhanh/DacNhanTam.jpg"></div>
+            <div class="item-2">
+                <p>Đắc Nhân Tâm</p>
+                <p class="red col-8 marginl">56.000 đ</p>
+                <a class="red col-3" href="" style="margin-top:0px"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="blue col-5 marginl" href="" style="margin-top:15px"><i class="fa-solid fa-heart"></i></a>
+                <p class="col-6 textalignr">16498 Đã bán</p>
+                <p class="col-5">&nbsp</p>
+                <p class="col-6 textalignr" style="margin-top:0px">Hà Nội</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+        </div>
+        <div class="col-5 item">
+            <div class="item-1"><img src="./Hinhanh/haohao.jpg"></div>
+            <div class="item-2">
+                <p>Thùng mỳ Hảo Hảo</p>
+                <p class="red col-8 marginl">108.000 đ</p>
+                <a class="red col-3" href="" style="margin-top:0px"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="blue col-5 marginl" href="" style="margin-top:15px"><i class="fa-solid fa-heart"></i></a>
+                <p class="col-6 textalignr">48 Đã bán</p>
+                <p class="col-5">&nbsp</p>
+                <p class="col-6 textalignr" style="margin-top:0px">Hồ Chí Minh</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-5 item">
+            <div class="item-1"><img src="./Hinhanh/BiaHeineken.jpg"></div>
+            <div class="item-2">
+                <p>Thùng bia Heineken</p>
+                <p class="red col-8 marginl">405.000 đ</p>
+                <a class="red col-3" href="" style="margin-top:0px"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="blue col-5 marginl" href="" style="margin-top:15px"><i class="fa-solid fa-heart"></i></a>
+                <p class="col-6 textalignr">6843 Đã bán</p>
+                <p class="col-5">&nbsp</p>
+                <p class="col-6 textalignr" style="margin-top:0px">Hồ Chí Minh</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="col-5 item">
+            <div class="item-1"><img src="./Hinhanh/sunlight.jpg"></div>
+            <div class="item-2">
+                <p>Nước rửa chén Sunlight</p>
+                <p class="red col-8 marginl">91.000 đ</p>
+                <a class="red col-3" href="" style="margin-top:0px"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="blue col-5 marginl" href="" style="margin-top:15px"><i class="fa-solid fa-heart"></i></a>
+                <p class="col-6 textalignr">48 Đã bán</p>
+                <p class="col-5">&nbsp</p>
+                <p class="col-6 textalignr" style="margin-top:0px">Hồ Chí Minh</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+    </div>
+    <div class="foot">
+        <div class="footitem col-5">
+            <h5 class="col-7">CHĂM SÓC KHÁCH HÀNG</h5>
+            <a class="col-7" href="">Trung tâm trợ giúp</a>
+            <a class="col-7" href="">Hướng dẫn mua hàng</a>
+        </div>
+
+        <div class="footitem col-5">
+            <h5 class="col-7">GIỚI THIỆU</h5>
+            <a class="col-7" href="">Điều khoản</a>
+            <a class="col-7" href="">Chính sách bảo mật</a>
+            <a class="col-7" href="">Tuyển dụng</a>
+
+        </div>
+
+        <div class="footitem col-5">
+            <h5 class="col-7">DANH MỤC SẢN PHẨM</h5>
+            <a class="col-7" href="">Thời trang</a>
+            <a class="col-7" href="">Đồ Tiêu dùng</a>
+            <a class="col-7" href="">Thiết bị điện tử</a>
+            <a class="col-7" href="">Sách</a>
+
+        </div>
+
+        <div class="footitem col-5">
+            <h5 class="col-7">THEO DÕI CHÚNG TÔI</h5>
+            <a class="col-7" href="">Facebook</a>
+            <a class="col-7" href="">Instagram</a>
+            <a class="col-7" href="">Twitter</a>
+
+        </div>
+
+        <div class="footitem col-5">
+            <h5 class="col-7">ĐỘI NGŨ PHÁT TRIỂN</h5>
+            <a class="col-7" href="">Trịnh Quốc Hai</a>
+
+        </div>
+    </div>
+</body>
+
+</html>
